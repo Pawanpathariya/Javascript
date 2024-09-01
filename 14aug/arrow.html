@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display(){
+      /*  College=nm=>"my college is "+nm;
+        document.getElementById("demo").innerHTML=College("NRI");
+      */
+        College=(nm,ct)=>"My college is "+nm+" in "+ct;
+        document.getElementById("demo").innerHTML=College("NRI","Bhopal");
+        }
+    </script>
+
+    <button onclick="display()">click here</button>
+    <h1 id="demo">welcome to cybrom </h1>
+</body>
+</html>
