@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function display(){
+        //     alert("Please enter city!!! ");
+        // }
+        function getval(){
+            var stuname=document.f1.nm.value;
+            var city=document.f1.ct.value;
+
+            alert("Name : "+stuname+" city :"+city);
+        }
+    </script>
+</head>
+<body>
+   <!-- <button onclick="display()">Click here!</button> -->
+ <h1>form </h1>
+ <form name="f1">
+   Enter name : <input type="text" name="nm">
+   <br>
+   Enter city : <input type="text" name="ct">
+   <br>
+    <button onclick="getval()">Click Here </button>
+</form>
+</body>
+</html>

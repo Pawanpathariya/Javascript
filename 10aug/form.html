@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+    function display(){
+    var name=document.f1.nm.value;
+    var clas=document.f1.cl.value;
+    var roll=document.f1.rn.value;
+    var marks=document.f1.m.value;
+    alert("Name "+name+" class "+clas+" roll no "+roll+" marks "+marks);}
+</script>
+
+</head>
+<body>
+    <h1>Form </h1>
+    <form name="f1">
+    Enter name : <input type="text" name="nm">
+    <br>
+    Enter class : <input type="text" name="cl">
+    <br>
+    Enter rollno : <input type="text" name="rn">
+    <br>
+    Enter marks : <input type="text" name="m">
+    <br>
+    <button onclick="display()">click here</button>
+
+    </form>
+</body>
+</html>
