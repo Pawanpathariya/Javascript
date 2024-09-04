@@ -9,9 +9,14 @@
     <script>
     let name="Pawan";
     let age=21;
+    let sal=45235;
    //concatenation using backtick (interpolation ${})
     let str=`Hello i am ${name} i am ${age} year old `;
     console.log(str);
+   //we can also use expression in interpolation 
+    let st=`hello i am ${name} i pay ${(sal*0.123).toFixed(2)} tax this year `;
+    console.log(st);
+    //to fixed is a method used for show digit how many you want after decimel 
     </script>
 </body>
 </html>
