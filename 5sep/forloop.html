@@ -6,9 +6,31 @@
     <title>Document</title>
 </head>
 <body>
+  Date of Joining <br>
+  DD:
+  <select>
   <script>
-      
+      for(var i=1;i<=31;i++){
+      document.write("<option>",i,"</option>");
+      }
   </script>
+ </select>
+  MM:
+  <select>
+  <script>
+      for(var i=1;i<=12;i++){
+      document.write("<option>",i,"</option>");
+      }
+  </script>
+ </select>
+  Year:
+  <select>
+  <script>
+      for(var i=1980;i<=2024;i++){
+      document.write("<option>",i,"</option>");
+      }
+  </script>
+ </select>
 </body>
 
 </html>
