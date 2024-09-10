@@ -7,9 +7,21 @@
 </head>
 <body>
     <script>
-     //for loop
+    /*
+    //for loop
      for(var i=1;i<=10;i++){
         document.write("<h1>",i,"</h1>");
+     }
+    */
+     //for in loop
+     const student={
+        "name":"pawan",
+        "rollno":121,
+        "fees":40000,
+        "city":"bhopal"
+     }
+     for(var key in student){
+        document.write("<h1>",key," : ",student[key],"</h1>");
      }
     </script>
 </body>
