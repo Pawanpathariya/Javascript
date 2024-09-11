@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body bgcolor="yellow">
+
+<!-- change value by innerhtml 
 <script>
     function display(){
         document.getElementById("demo").innerHTML="Hello I am Pawan";
@@ -14,5 +16,16 @@
 
      <button onclick="display()">Click here!!</button>
      <h1 id="demo">Welcome to cybrom</h1>
+-->
+
+<!-- change value by attribute -->
+city <input type="text" value="Indore" id="ct">
+<button onclick="change()">click here</button>
+
+<script>
+    function change(){
+        document.getElementById("ct").value="mumbai";
+    }
+</script>
 </body>
 </html>
