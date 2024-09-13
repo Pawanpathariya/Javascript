@@ -9,20 +9,21 @@
     #demo{
         width: 350px;
         border: 3px solid;
-        height: 100px;
+        height: auto;
         text-align: center;
     }
 </style>
 <body bgcolor="aqua">
     <script>
-     function display(){
-     let myObj=document.createElement("h1");
-     myObj.innerText="Welcome to cybrom";
+     function addMore(){
+     let myObj=document.createElement("p");
+     myObj.innerHTML="Enter Subject : <input type='text'>";
      document.getElementById("demo").appendChild(myObj);   
      } 
     </script>
-     <button onclick="display()">click here !!</button>
+     <button onclick="addMore()">click here !!</button>
      <br><br>
      <div id="demo">
+        <p>Enter Subject : <input type="text"></p>
      </div>
 </html>
