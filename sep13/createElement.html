@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo{
+        width: 350px;
+        border: 3px solid;
+        height: 100px;
+    }
+</style>
+<body>
+    <script>
+     function display(){
+     let myObj=document.createElement("h1");
+     myObj.innerText="Welcome to cybrom";
+     document.getElementById("demo").appendChild(myObj);   
+     } 
+    </script>
+     <button onclick="display()">click here !!</button>
+     <br><br>
+     <div id="demo">
+     </div>
+</html>
