@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    #demo{
+        width: 350px;
+        border: 3px solid;
+        height: auto;
+        text-align: center;
+    }
+</style>
+<body bgcolor="aqua">
+    <script>
+        var i=1;
+     function addMore(){
+        if(i>5){
+            return;
+        }
+        i++;
+     let myObj=document.createElement('p');
+     myObj.innerHTML=` Enter Subject : <input type="text"> `+ `<img src="first.jpg" alt="ag" width="40px" onclick="removeEl()">`;
+     document.getElementById("dem").appendChild(myObj);
+     } 
+     function removeEl(){
+        document.getElementById("dem").removeChild(dem.childNodes[0]);
+     }
+    </script>
+     <button onclick="addMore()">Add More!!</button>
+     <br><br>
+     <div id="demo">
+        <p>Enter Subject : <input type="text"></p>
+        <div id="dem">
+        </div>
+     </div>
+</html>
