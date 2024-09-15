@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <!-- Array Object  Table form -->
+
+     <div id="demo"></div>
+
+     <script>
+        const student=[
+            {
+                "rollno":120,
+                "name":"Ram",
+                "city":"Bhopal"
+            },
+            {
+                "rollno":121,
+                "name":"Sumit",
+                "city":"Indore"
+            },
+            {
+                "rollno":122,
+                "name":"Pawan",
+                "city":"Ujjain"
+            },
+            {
+                "rollno":123,
+                "name":"Aditya",
+                "city":"M.P. Nagar"
+            },
+            {
+                "rollno":124,
+                "name":"Sandeep",
+                "city":"Karond"
+            }
+    ]
+
+    let Table="<table border='1'> <tr> <td>RollNo</td>  <td>Name</td>  <td>City</td> </tr>";
+        student.map((key)=>{
+                          Table+="<tr>";
+                            Table+="<h1>"+"<td>"+key.rollno+"</td>"+"</h1>";
+                            Table+="<td>"+key.name+"</td>";
+                            Table+="<td>"+key.city+"</td>";
+                          })
+                document.getElementById("demo").innerHTML=Table;
+                document.getElementById("demo").style.color='blue';
+                document.getElementById("demo").style.fontSize='20px';
+     </script>
+
+</body>
+</html>
