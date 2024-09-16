@@ -9,9 +9,7 @@
 <!-- filter() -->
     <script>
 const age=[34,56,11,25,36,15,23,45,66,78];
-//const ans=age.filter(function(key)
-//arrow function 
-const ans=age.filter((key)=>
+const ans=age.filter(function(key)
 {
 if(key%2==0){
 return true;
@@ -20,6 +18,11 @@ else{
     return false;
 }
 })
+console.log(age);
+console.log(ans);
+
+//arrow function 
+const ag=age.filter(item=>item%2==0)
 console.log(age);
 console.log(ans);
 </script>
