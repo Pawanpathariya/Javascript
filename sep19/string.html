@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num="absdfzghklmnxvxcxcsqetwetuop@#$102";
+        let mystr="";
+        let len=num.length;
+        for(var i=0;i<=7;i++){
+         var num1=Math.floor(Math.random()*len);
+         mystr+=num.charAt(num1);
+        }
+        document.write("<h1> Random Password : ",mystr,"</h1>")
+    </script>
+</body>
+</html>
