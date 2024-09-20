@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script>
@@ -14,7 +15,6 @@
         }
     </script>
     <!-- calculator -->
-
     <div id="box">
       <input type="text" id="txtbox">
       <button id="btn1" onclick="document.getElementById('txtbox').value+=document.getElementById('btn1').innerHTML">1</button>
@@ -34,8 +34,6 @@
       <button id="btneq"  onclick="document.getElementById('txtbox').value=eval(document.getElementById('txtbox').value)">=</button>
       <button id="btneq"  onclick="document.getElementById('txtbox').value=''">Clear</button>
       <button id="btnback"  onclick="cal()">X</button>
-      
-
     </div>
 </body>
 </html>
