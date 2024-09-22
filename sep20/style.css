@@ -1,37 +1,50 @@
-#box{
-    position: absolute;
-    left: 40%;
-    align-items: center;
-    width: 320px;
-   margin: 20px;
-   background-color:azure;
-   border: 1px solid black;
-   border-radius: 10px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+#box{
+    position: relative;
+    left: 40%;
+    top: 100px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+   background-color: rgb(21, 93, 115);
+}
 #txtbox{
-    border-radius: 10px;
-    text-align: end;
-    margin-left: 10px;
-   margin-top: 20px;
-    width: 290px;
-    font-family: bold;
-    font-size: 20px;
     height: 80px;
-    padding-right: 10px;
-    
+    width: 300px;
+    text-align: end;
+    padding-right: 20px;
+    border: 1px dotted;
+    border-radius: 20px;
+}
+
+#box1{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   gap: 20px;
 }
 button{
-    margin-left: 2px;
-    margin-top: 20px;
-    width: 100px;
-    height: 40px;
-    background: color #f0f0f0;;
-    border: 1px solid red;
+    width: 60px;
+    height: 50px;
+    border: 0px solid black;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px ;
+    font-weight: bold;
+}
+button:hover{
+    background-color:aqua;
 }
 #btneq{
-   width: 206px;
-   margin-bottom: 30px;
+    background-color:aqua;
+}
+#btneq:hover{
+    background-color: bisque;
 }
