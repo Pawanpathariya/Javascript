@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            border: 3px solid;
+            border-radius: 10px;
+            background-color: azure;
+            margin: auto;
+            width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+        input{
+            padding: 5px;
+            gap: 10px;
+        }
+        #cal{
+            height: 30px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+  <div id="box">
+  
+
+     Weight(Kg): <input type="text" id="weight"><br>
+     
+    Height(cm) : <input type="text" id="height"><br>
+     <button id="cal">Calculate BMI</button>
+
+     <h3 id="ans"> </h3>
+     <h3 id="ans1"> </h3>
+     
+
+     <script src="practice.js"></script>
+</div>
+</body>
+</html>
