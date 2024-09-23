@@ -25,7 +25,11 @@
             let d=new Date();
              document.getElementById("demo").innerHTML=d;
         }
-        setInterval(time,1000);
-     </script>
+      let si=setInterval(time,1000);
+      function stop(){
+      clearInterval(si);
+      }
+      </script> 
+     <button onclick="stop()">Stop</button>
 </body>
 </html>
