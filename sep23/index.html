@@ -18,6 +18,14 @@
      </script>
      -->
 
-     
+     <h1 id="demo">Time</h1>
+
+     <script>
+        function time(){
+            let d=new Date();
+             document.getElementById("demo").innerHTML=d;
+        }
+        setInterval(time,1000);
+     </script>
 </body>
 </html>
