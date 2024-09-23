@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #line{
+        width: 20px;
+        height: 40px;
+        background-color: blue;
+    }
+
+</style>
+<body>
+     <script>
+        let wi=20;
+        let myInt;
+     function resize(){
+     let myobj=document.getElementById("line");
+         myobj.style.width=wi+"px";
+         wi=wi+5;
+     }
+
+     function Startnow(){
+     myInt=setInterval(resize,100);
+     }
+
+     function Stopnow(){
+        clearInterval(myInt);
+     }
+     </script>
+
+     <h1 id="line"></h1>
+     <button onclick="Startnow()">Start</button>
+     <button onclick="Stopnow()">Stop</button>
+</body>
+</html>
