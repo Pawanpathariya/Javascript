@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">0</h1>
+
+    <script>
+       var myint;
+       function myfun(){
+          let a= Number(document.getElementById("head").innerHTML);
+           a++;
+          document.getElementById("head").innerHTML=a;
+         myint= setTimeout(myfun,100);
+       }
+
+       myint=setTimeout(myfun,100);
+       function stopnow(){
+           clearTimeout(myint);
+       }
+    </script>
+    <button onclick="stopnow()">stop</button>
+</body>
+</html>
