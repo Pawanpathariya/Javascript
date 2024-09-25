@@ -14,14 +14,26 @@
         const b=[4,5,6];
         const c=[...a,...b];
         console.log(c);*/
-
+    
+        /*
      const nu=[1,2,3,4,5,6];
      const [a,b,c, ...baki]=nu;
      console.log(a);
      console.log(b);
      console.log(c);
-     console.log(baki);
+     console.log(baki);*/ 
 
+     const student ={
+        "rollno":121,"name":"Pawan","city":"Bhopal"
+     }
+     const stdetail={
+        "class":"B.tech","grade":"A","result":"Pass"
+     }
+
+     const det={
+         ...student,...stdetail
+     }
+   console.log(det);
        //destructor
        /* const num=[1,2,3];
         const [a, b, c]=num;
