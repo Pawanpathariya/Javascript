@@ -10,10 +10,24 @@
 
     <script>
         //spread operator
-        const a=[1,2,3];
-        const b=[4,5,6];
-        const c=[...a,...b];
+        // const a=[1,2,3];
+        // const b=[4,5,6];
+        // const c=[...a,...b];
+        // console.log(c);
+
+
+        const num=[1,2,3];
+        const [a, b, c]=num;
+        console.log(a);
+        console.log(b);
         console.log(c);
+
+
+        const student={"roll":120,"name":"pawan","city":"bhopal"};
+        const{roll,name,city}=student;
+        console.log(roll);
+        console.log(name);
+        console.log(city);
     </script>
-</body>
+</body> 
 </html>
