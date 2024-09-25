@@ -10,13 +10,20 @@
 
     <script>
         //spread operator
-        // const a=[1,2,3];
-        // const b=[4,5,6];
-        // const c=[...a,...b];
-        // console.log(c);
+        /* const a=[1,2,3];
+        const b=[4,5,6];
+        const c=[...a,...b];
+        console.log(c);*/
 
+     const nu=[1,2,3,4,5,6];
+     const [a,b,c, ...baki]=nu;
+     console.log(a);
+     console.log(b);
+     console.log(c);
+     console.log(baki);
 
-        const num=[1,2,3];
+       //destructor
+       /* const num=[1,2,3];
         const [a, b, c]=num;
         console.log(a);
         console.log(b);
@@ -27,7 +34,7 @@
         const{roll,name,city}=student;
         console.log(roll);
         console.log(name);
-        console.log(city);
+        console.log(city);*/
     </script>
 </body> 
 </html>
