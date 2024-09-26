@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- window.localStorage -->
+     <script>
+   function mydata(){
+    let name="Pawan Pathariya";
+    window.localStorage.setItem("Studentname",name);
+   }
+   function showdata(){
+    let name=window.localStorage.getItem("Studentname");
+    document.getElementById("demo").innerHTML="Hello "+name;
+   }
+     </script>
+     <h1 id="demo">My data</h1>
+     <button onclick="mydata()">click here</button>
+     <button onclick="showdata()">showdata</button>
 </body>
 </html>
