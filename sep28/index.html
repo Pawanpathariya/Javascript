@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Form Validation -->
+   <form name="f1" method="post" action="save.html" onsubmit="return validation()">
+    <h1>Students Form</h1>
+    Enter name: <input type="text" name="nm">
+    <br>
+    Enter city: <input type="text" name="ct">
+    <br>
+    <button>Save</button>
+</form>
+
+<script>
+        function validation(){
+            let name=document.f1.nm.value;
+            let city=document.f1.ct.value;
+            if(name==""){
+                alert("Please enter your name !!")
+                document.f1.nm.focus();
+                return false;
+            }
+            if(city==""){
+                alert("Please enter your city !!")
+                document.f1.ct.focus();
+                return false;
+            }
+        }
+</script>
+
+
+
+<!-- Full validation form -->
+<!-- 
+<h1>Application Form</h1>
+<form name="f2" method="post" action="save.html" onsubmit="return validation()">
+    Enter Name: <input type="text" name="nm"> <br>
+    Enter Age: <input type="text" name="age"> <br>
+    Enter Password: <input type="text" name="pass1"> <br>
+    Enter Re Password: <input type="text" name="pass2"> <br>
+    Enter Fees: <input type="text" name="fs"> <br>
+    (Note: fees equal or more than 45000 /- );
+    <button>Data Save</button>
+</form>
+
+
+
+<script>
+        function validation(){
+            let name= document.f2.nm.value;
+            let age= document.f2.age.value;
+            let age1=parseInt(age);
+            let pass1= document.f2.pass1.value;
+            let pass2= document.f2.pass2.value;
+            let fees= document.f2.fs.value;
+            let fees1=parseInt(fees);
+
+            if(name==""){
+                alert("Please Enter Name !!");
+                document.f2.nm.focus();
+                return false;
+            }
+            if(age==""){
+                alert("Please Enter Age !!");
+                document.f2.age.focus();
+                return false;
+            }
+            if(isNaN(age1)){
+                alert("Please Enter Numeric Value !!");
+                document.f2.age.value="";
+                document.f2.age.focus();
+                return false;
+            }
+            if(pass1==""){
+                alert("Please Enter Password !!");
+                document.f2.pass1.focus();
+                return false;
+            }
+            if(pass2==""){
+                alert("Please Re-Enter Password !!");
+                document.f2.pass2.focus();
+                return false;
+            }
+            if(pass1!=pass2){
+                alert("Password does not match !!");
+                document.f2.pass1.value="";
+                document.f2.pass2.value="";
+                document.f2.pass1.focus();
+                return false;
+            }
+            if(fees==""){
+                alert("Please Enter your fees !!");
+                document.f2.fs.focus();
+                return false;
+            }
+            if(isNaN(fees1)){
+                alert("Please Enter Numeric fees !!");
+                document.f2.fs.value="";
+                document.f2.fs.focus();
+                return false;
+            }
+            if(fees1<=45000){
+                alert("Your fees equal or more than 45000 !");
+                document.f2.fs.value="";
+                document.f2.fs.focus();
+                return false;
+            }
+        }
+</script> -->
+
+
+</body>
+</html>
