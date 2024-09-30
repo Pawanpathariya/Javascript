@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    function display(){
+
+        try{
+        var n1=document.getElementById('num1').value;
+        var n2=document.getElementById('num2').value;
+
+        if(isNaN(n1) || isNaN(n2)){
+            throw "String not allow ";
+        }
+        else{
+         if(n2==0){
+            throw "Not divide my zero ";
+        }
+        else{
+            let c=n1/n2;
+            document.getElementById('ans').innerHTML=c;
+        }
+    }
+}
+    catch(a){
+        alert(a);
+    }
+    finally{
+        document.getElementById('ans1').innerHTML='<br>'+"The answer is " +n1/n2;
+    }
+}
+ </script>
+
+    Enter num1: <input type="text" id="num1">
+    <br>
+    Enter num2: <input type="text" id="num2">
+    <br>
+    <button onclick="display()">Answer</button>
+    <h1 id="ans"></h1>
+    <h1 id="ans1"></h1>
+</body>
+</html>
