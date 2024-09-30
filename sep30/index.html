@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function display(){
+      var a=123;
+      var b=0;
+      try{
+        if(b==0){
+            throw "not divide by zero ";
+        }
+   else{
+        document.getElementById('demo').innerHTML+= '<br> division of '+a+'by'+b+'='+a/b;
+   }
+      }
+      catch(e){
+        alert(e);
+      }
+        }
+    </script>
+    <h1 id="demo">Welcome!</h1>
+    <button onclick="display()">click here</button>
 </body>
 </html>
