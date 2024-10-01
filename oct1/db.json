@@ -30,5 +30,36 @@
         "city":"Mumbai",
         "fees":55000
        }
-    ]
+    ],
+ "result":[
+    {
+        "rollno":121,
+        "grade":"A",
+        "marks":340
+    },
+    {
+        "rollno":122,
+        "grade":"B",
+        "marks":345
+    },
+    {
+        "rollno":123,
+        "grade":"B",
+        "marks":445
+    }
+ ],
+ "subject":[
+        {
+            "rollno":121,
+            "sub":"Btech"
+        },
+        {
+            "rollno":122,
+             "sub":"MCA"
+        },
+        {
+            "rollno":123,
+             "sub":"BCA"
+        } 
+ ]
 }
