@@ -1,0 +1,34 @@
+{
+    "students":[
+       {
+        "rollno":121,
+        "name":"pawan",
+        "city":"bhopal",
+        "fees":34500
+       },
+       {
+        "rollno":122,
+        "name":"Naman",
+        "city":"Indore",
+        "fees":35500
+       },
+       {
+        "rollno":123,
+        "name":"Ram",
+        "city":"Sehore",
+        "fees":45500
+       },
+       {
+        "rollno":124,
+        "name":"Shyam",
+        "city":"Jawalpur",
+        "fees":4500
+       },
+       {
+        "rollno":125,
+        "name":"Sumit",
+        "city":"Mumbai",
+        "fees":55000
+       }
+    ]
+} 
