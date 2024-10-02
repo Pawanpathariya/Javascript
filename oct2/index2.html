@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //async 
+       async function display(){
+        let table=`<table width='500' border='1'>
+            <tr>
+                <td> Roll no </td>
+                <td> Name </td>
+                <td> City </td>`
+            let api="http://localhost:3000/students";
+            let mydata= await fetch(api);
+            let data=await mydata.json();
+            data.map((key)=>{
+                table+=`<tr>
+                    <td> ${key.rollno} </td>
+                    <td> ${key.name} </td>
+                    <td> ${key.city} </td>
+                    </tr> `
+                })
+            table+="</table>"
+            document.getElementById("demo").innerHTML=table;
+            }
+
+        
+    </script>
+     <button onclick="display()">Click Here</button>
+     <hr size="4" color="red">
+     <div id="demo">Welcome!!!</div>
+</body>
+</html>
