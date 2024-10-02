@@ -7,11 +7,18 @@
 </head>
 <body bgcolor="yellow">
     <script>
-        function display(){
-            let mydata=fetch("pawan.txt");
-            let data=mydata.text();
+        //async 
+       async function display(){
+            let mydata= await fetch("pawan.txt");
+            let data=await mydata.text();
             document.getElementById("demo").innerHTML=data;
         }
+ 
+        //sync
+   /* function display(){
+        let file="pawan.txt";
+        fetch().then(x=>x.text()).then(y=>document.getElementById('demo').innerHTML=y);
+    }*/ 
     </script>
      <button onclick="display()">Click Here</button>
      <hr size="4" color="red">
