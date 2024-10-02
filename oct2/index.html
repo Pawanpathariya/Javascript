@@ -8,17 +8,17 @@
 <body bgcolor="yellow">
     <script>
         //async 
-       async function display(){
+     /*  async function display(){
             let mydata= await fetch("pawan.txt");
             let data=await mydata.text();
             document.getElementById("demo").innerHTML=data;
         }
- 
+ */
         //sync
-   /* function display(){
+    function display(){
         let file="pawan.txt";
-        fetch().then(x=>x.text()).then(y=>document.getElementById('demo').innerHTML=y);
-    }*/ 
+        fetch(file).then(x=>x.text()).then(y=>document.getElementById('demo').innerHTML=y);
+    } 
     </script>
      <button onclick="display()">Click Here</button>
      <hr size="4" color="red">
