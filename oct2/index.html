@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body bgcolor="yellow">
+    <script>
+        function display(){
+            let mydata=fetch("pawan.txt");
+            let data=mydata.text();
+            document.getElementById("demo").innerHTML=data;
+        }
+    </script>
+     <button onclick="display()">Click Here</button>
+     <hr size="4" color="red">
+     <div id="demo">Welcome!!!</div>
 </body>
 </html>
