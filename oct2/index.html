@@ -8,12 +8,11 @@
 <body bgcolor="yellow">
     <script>
         //async 
-     /*  async function display(){
+       async function display1(){
             let mydata= await fetch("pawan.txt");
             let data=await mydata.text();
             document.getElementById("demo").innerHTML=data;
         }
- */
         //sync
     function display(){
         let file="pawan.txt";
@@ -21,6 +20,7 @@
     } 
     </script>
      <button onclick="display()">Click Here</button>
+     <button onclick="display1()">Click Here</button>
      <hr size="4" color="red">
      <div id="demo">Welcome!!!</div>
 </body>
