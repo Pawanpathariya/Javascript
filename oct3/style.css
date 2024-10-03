@@ -1,0 +1,16 @@
+#demo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr;
+    width: 100%;
+    border: 1px solid red;
+   padding-bottom: 40px;
+   color: rgb(205, 31, 31);
+   border-radius: 20px;
+   font-size: 14px;
+   box-shadow: 2px 3px red;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

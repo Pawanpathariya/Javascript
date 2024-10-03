@@ -29,10 +29,17 @@ async function dataDisplay() {
 
 
     data.map((key)=>{
-        Myobj+=`<h1>Rollno ${key.rollno} <\h1>
-                <h2>name ${key.name} <\h2>
-                <h2>city ${key.city} <\h2> `
+        Myobj+=`<h1>Rollno : ${key.rollno} <\h1>
+                <h1>City : ${key.city} <\h1> 
+                <h1>Name : ${key.name} <\h1>
+                <h1>Fees : ${key.fees} <\h1>
+
+              
+              `
     })
 
     document.getElementById("demo").innerHTML= Myobj;
+    document.getElementById("demo").style.backgroundColor="yellow";
+
+ 
 }

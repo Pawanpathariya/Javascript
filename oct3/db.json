@@ -3,8 +3,8 @@
     {
       "id": "1",
       "rollno": 121,
-      "name": "pawan",
-      "city": "bhopal",
+      "name": "Pawan",
+      "city": "Bhopal",
       "fees": 34500
     },
     {
@@ -22,11 +22,11 @@
       "fees": 45500
     },
     {
-      "id": "5bf0",
-      "rollno": "",
-      "name": "",
-      "city": "",
-      "fees": ""
+      "id": "1d87",
+      "rollno": "124",
+      "name": "Pankaj",
+      "city": "Ujjain",
+      "fees": "55000"
     }
   ]
 }
