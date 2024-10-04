@@ -8,6 +8,9 @@
    border-radius: 20px;
    font-size: 14px;
    box-shadow: 2px 3px red;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
 }
 body{
     align-items: center;
