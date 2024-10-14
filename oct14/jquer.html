@@ -6,15 +6,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
 </head>
-<body>
+<body bgcolor="aqua">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dicta non blanditiis ducimus nostrum minima praesentium. At ipsum, repellendus placeat explicabo suscipit et voluptates, qui iure ipsa delectus possimus assumenda tempora harum, doloremque animi. Minima reprehenderit sit deleniti blanditiis dolorum ipsam ratione itaque nihil doloremque vel obcaecati, excepturi porro voluptate.</p>
-    <h1>Click here!!</h1>
+    <button id="btn1">click here!</button>
+    <button id="btn12">click here</button>
+    <button id="btn3">click</button>
     <script>
         $(document).ready(function(){
-            $("h1").click(function(){
+            $("#btn1").click(function(){
                 $("p").hide(3000);
             })
         })
     </script>
+
 </body>
 </html>
