@@ -8,12 +8,15 @@
 </head>
 <body bgcolor="aqua">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dicta non blanditiis ducimus nostrum minima praesentium. At ipsum, repellendus placeat explicabo suscipit et voluptates, qui iure ipsa delectus possimus assumenda tempora harum, doloremque animi. Minima reprehenderit sit deleniti blanditiis dolorum ipsam ratione itaque nihil doloremque vel obcaecati, excepturi porro voluptate.</p>
-    <button id="btn1">click here!</button>
-    <button id="btn12">click here</button>
-    <button id="btn3">click</button>
+    <button id="btn1" class="b1">click here!</button>
+    <button id="btn12" class="b2">click here</button>
+    <button id="btn3" class="b3">click</button>
     <script>
         $(document).ready(function(){
-            $("#btn1").click(function(){
+            // id selector
+            //$("#btn1").click(function(){
+            //class selector
+            $(".b3").click(function(){
                 $("p").hide(3000);
             })
         })
