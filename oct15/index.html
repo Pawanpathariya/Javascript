@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- 
     <p>Welcome to Cybrom Bhopal</p>
     <p>We are web Developer </p>
     <p>Hello ! friends </p>
@@ -19,6 +20,25 @@
        $(this).hide(3000);
             })
         })
+    </script> -->
+
+
+    Enter Name: <input type="text"> <br>
+    Enter City: <input type="text"> <br>
+    Enter State: <input type="text"> <br>
+    Enter Country: <input type="text"> <br>
+
+
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","aqua");
+            })
+            $("input").blur(function(){
+                $(this).css("background-color","white");
+            })
+        })
     </script>
+     
 </body>
 </html>
