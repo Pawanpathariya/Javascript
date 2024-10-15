@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aspernatur voluptate sapiente facere odio. Perferendis inventore doloribus suscipit maxime provident quas hic ad porro aspernatur quasi beatae vel nam omnis quibusdam expedita quidem, iusto explicabo ratione quos quaerat velit harum.</h1>
+    <h1 id="demo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aspernatur voluptate sapiente facere odio. Perferendis inventore doloribus suscipit maxime provident quas hic ad porro aspernatur quasi beatae vel nam omnis quibusdam expedita quidem, iusto explicabo ratione quos quaerat velit harum.</h1>
+    <button id="btn1">Click here </button> 
+    <button id="btn2">Click here </button> 
+    <button id="btn3">Show </button> 
+    <button id="btn4">show</button> 
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#demo").hide(3000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#demo2").hide(3000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("#demo").show(3000);
+            })
+        })
+
+
+        $(document).ready(function(){
+            $("#btn4").mousemove(function(){
+                $("#demo2").show(3000);
+            })
+        })
+    </script>
+</body>
+</html>
