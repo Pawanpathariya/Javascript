@@ -7,7 +7,12 @@
 
     <title>Document</title>
     <style>
-
+   #box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+   }
     </style>
 </head>
 <body>
@@ -119,7 +124,7 @@
             })
         })
     </script>  -->
-    <button id="cl">click here</button>
+    <!-- <button id="cl">click here</button>
     <div id="box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, a vitae soluta commodi nisi delectus expedita culpa aliquid! Illo dolor recusandae, id, voluptas quos eveniet earum quis enim harum expedita unde praesentium, maiores odio ratione accusamus hic? Quasi doloremque aspernatur, culpa beatae debitis ratione? Cumque ad inventore omnis repellendus excepturi.
     </div>
@@ -131,6 +136,24 @@
             })
            
         })
+    </script>  -->
+
+
+    <button id="cl">click here</button>
+
+    <div id="box">
+    </div>
+     
+    <script>
+        $(document).ready(function(){
+            $("#cl").click(function(){
+                $("#box").animate({ top:'100px'},3000);
+                $("#box").animate({ left:'100px'},3000);
+                $("#box").animate({ top:'40px'},3000);
+                $("#box").animate({ left:'10px'},3000);
+            });
+          
+        });
     </script> 
 </body>
 </html>
