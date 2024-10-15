@@ -6,6 +6,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Document</title>
+    <style>
+
+    </style>
 </head>
 <body>
     <!-- 
@@ -23,7 +26,7 @@
     </script> -->
 
 
-    Enter Name: <input type="text"> <br>
+    <!-- Enter Name: <input type="text"> <br>
     Enter City: <input type="text"> <br>
     Enter State: <input type="text"> <br>
     Enter Country: <input type="text"> <br>
@@ -38,7 +41,22 @@
                 $(this).css("background-color","white");
             })
         })
-    </script>
+    </script> -->
+  <button id="cl">click here</button>
+  <button id="sh">show</button>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, a vitae soluta commodi nisi delectus expedita culpa aliquid! Illo dolor recusandae, id, voluptas quos eveniet earum quis enim harum expedita unde praesentium, maiores odio ratione accusamus hic? Quasi doloremque aspernatur, culpa beatae debitis ratione? Cumque ad inventore omnis repellendus excepturi.
+    </div>
      
+    <script>
+        $(document).ready(function(){
+            $("#cl").click(function(){
+                $("#box").hide(3000);
+            })
+            $("#sh").click(function(){
+                $("#box").show(3000);
+            })
+        })
+    </script>
 </body>
 </html>
